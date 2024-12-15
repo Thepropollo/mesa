@@ -1,13 +1,22 @@
-/* General styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+/* Asegurar que el contenedor ocupe toda la altura */
+html, body {
+    height: 100%; /* Altura del 100% de la ventana */
+    margin: 0; /* Quitar márgenes */
+    padding: 0; /* Quitar padding */
 }
 
-/* Navbar styles */
+/* Estructura de página */
+.page-wrapper {
+    display: flex;
+    flex-direction: column; /* Diseño en columna */
+    min-height: 100vh; /* Altura mínima del 100% de la ventana */
+}
+
+/* Contenido principal */
+main.container {
+    flex: 1; /* Toma el espacio restante entre el navbar y el footer */
+}
+
 .navbar {
     background-color: #F9FCE7;
     color: #EA4B2E;
@@ -82,29 +91,30 @@ body {
     color: #EA4B2E;
 
 }
-/* Footer section */
+
+/* Footer */
 .footer {
     background-color: #EA4B2E; /* Color de fondo */
-    color: #000000; /* Color de texto */
-    text-align: center; /* Centrar el texto */
-    padding: 30px 0px; /* Espaciado superior e inferior */
-    width: 100%; /* Ocupa el 100% del ancho de la página */
-    position: auto; /* Posicionamiento relativo */
+    color: #000000; /* Color del texto */
+    text-align: center; /* Centrar el contenido */
+    padding: 30px 0; /* Espaciado interno */
+    width: 100%; /* Ancho completo */
+    margin-top: auto; /* Asegurar que el footer se quede al final */
 }
 
-/* Estilo para el título */
+/* Estilo para el título en el footer */
 .footer h2 {
-    font-size: 24px; /* Tamaño de fuente del título */
-    margin-bottom: 5px; /* Espacio debajo del título */
+    font-size: 24px; /* Tamaño del texto */
+    margin-bottom: 5px; /* Espaciado inferior */
 }
 
-/* Estilo para los párrafos */
+/* Estilo para los párrafos del footer */
 .footer p {
-    margin: 0px 0; /* Espacio entre los párrafos */
-    font-size: 16px; /* Tamaño de fuente de los párrafos */
+    margin: 0; /* Sin márgenes */
+    font-size: 16px; /* Tamaño del texto */
 }
 
-/* Estilo para los enlaces */
+/* Enlaces en el footer */
 .footer a {
     color: #5da7fc; /* Color de los enlaces */
     text-decoration: none; /* Quitar subrayado */
@@ -112,17 +122,4 @@ body {
 
 .footer a:hover {
     text-decoration: underline; /* Subrayado al pasar el ratón */
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .menu-images {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .menu-images img {
-        width: 100%;
-        max-width: 300px;
-    }
 }

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import useDynamicCSS from './useDynamicCSS';
 
 const ItalianoPage = () => {
-    useDynamicCSS('../css/italiano.css');
+    useDynamicCSS('../css/styleitaliano.css');
     return (
         <div>
             {/* Barra de navegación */}
@@ -39,7 +39,7 @@ const ItalianoPage = () => {
                     <div className="menu-item">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtIFhz1MKYnehsdWQDI3In_fV3hJtrdcdpXA&s" alt="Pasta Carbonara" />
                         <h3>
-                            <a>Pasta Carbonara</a>
+                            <h4>Pasta Carbonara</h4>
                         </h3>
                         <p>Deliciosa pasta con salsa carbonara.</p>
                         <span>$12</span>
@@ -47,7 +47,7 @@ const ItalianoPage = () => {
                     <div className="menu-item">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh7-18uhQBshQdfFRgRRciaLghKoajjI9A3g&s" alt="Pizza Margherita" />
                         <h3>
-                            <a>Pizza Margherita</a>
+                            <h4>Pizza Margherita</h4>
                         </h3>
                         <p>Auténtica pizza con tomate, mozzarella y albahaca fresca.</p>
                         <span>$10</span>
@@ -55,7 +55,7 @@ const ItalianoPage = () => {
                     <div className="menu-item">
                         <img src="https://www.mariberico.cl/web/wp-content/uploads/2018/09/lasana-bolonesa.jpg" alt="Lasaña Boloñesa" />
                         <h3>
-                            <a>Lasaña Boloñesa</a>
+                            <h4>Lasaña Boloñesa</h4>
                         </h3>
                         <p>Lasaña clásica con carne y salsa boloñesa.</p>
                         <span>$14</span>

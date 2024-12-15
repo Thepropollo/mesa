@@ -108,13 +108,13 @@ const HomePage = () => {
                 imgSrc="../recursos/vane.png"
                 title="Dolce Vita"
                 description="Dolce Vita es un restaurante italiano que celebra la esencia de la cocina mediterránea, ofreciendo pastas frescas, pizzas artesanales y sabores auténticos que te transportan al corazón de Italia."
-                link="/dolce-vita"
+                link="/italiano"
             />
             <InfoSection
                 imgSrc="../recursos/Ramon.png"
                 title="La tablita del Tartaro"
                 description="La Tablita del Tártaro es un restaurante especializado en asados a la parrilla, donde los cortes de carne premium y las técnicas tradicionales se combinan para ofrecer una experiencia gastronómica llena de sabor y autenticidad."
-                link="/la-tablita-del-tartaro"
+                link="/asadero"
             />
 
             <footer className="footer">

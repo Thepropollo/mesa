@@ -1,12 +1,23 @@
-body {
+html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100%;
     background-color: #1c1c1c;
     color: #f4f4f4;
 }
 
-nav {
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1; /* Expande el contenido principal para llenar el espacio disponible */
+}
+
+.navbar {
     background-color: #333;
     color: white;
     padding: 1rem;
@@ -21,48 +32,47 @@ nav {
     width: 100%;
 }
 
-
 .nav-logo img {
-    margin-top: 0cm;
-    width: 90px;  /* Ajusta el ancho según sea necesario */
+    margin-top: 0;
+    width: 90px;
     height: auto; /* Mantiene la proporción de la imagen */
 }
 
 .nav-items {
     display: flex;
-    flex-direction: column;  /* Alinea verticalmente los elementos */
-    align-items: center;     /* Centra los elementos */
-    flex-grow: 1;            /* Permite que ocupe el espacio disponible */
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .nav-title {
     font-size: 1.5rem;
     font-weight: bold;
     color: #f4f4f4;
-    margin-bottom: 0.5rem;   /* Espacio debajo del título */
+    margin-bottom: 0.5rem;
 }
 
 .nav-links {
     display: flex;
-    flex-wrap: wrap;         /* Permite que los enlaces se ajusten en varias líneas */
-    justify-content: center;  /* Centra los enlaces */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .nav-links a {
     color: #f4f4f4;
     text-decoration: none;
-    margin: 0 0.5rem;       /* Espacio alrededor de los enlaces */
+    margin: 0 0.5rem;
     font-weight: bold;
 }
 
 .reservation-button {
-    background-color: #ff9800; /* Color del botón */
-    color: white;               /* Color del texto del botón */
-    padding: 0.5rem 1rem;      /* Espaciado dentro del botón */
-    border: none;               /* Sin borde */
-    border-radius: 5px;        /* Bordes redondeados */
-    cursor: pointer;            /* Cambia el cursor al pasar por encima */
-    font-weight: bold;          /* Negrita */
+    background-color: #ff9800;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .menu-icon {
@@ -131,15 +141,15 @@ h1 {
 }
 
 .footer {
-    background-color: #333;  /* Color de fondo */
-    color: white;            /* Color del texto */
-    text-align: center;      /* Centrado del texto */
-    padding: 1rem 0;        /* Espaciado arriba y abajo */
-    width: 100%;             /* Asegura que el pie ocupe todo el ancho */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
 }
 
 .footer p {
-    margin: 0;              /* Sin márgenes */
+    margin: 0;
 }
 
 @media (min-width: 768px) {
