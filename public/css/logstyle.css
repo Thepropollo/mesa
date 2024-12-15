@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     font-family: "Nunito", sans-serif;
 }
 body{
@@ -33,9 +31,8 @@ body{
 }
 
 .user-actions a {
-    margin-left: 20px;
     color: #333;
-    text-decoration: none;
+    text-align-last: center;
 }
 
 .inicio-button {
@@ -43,15 +40,18 @@ body{
     color: #fff;
     padding: 8px 15px;
     border-radius: 5px;
+    position: relative;
 }
-
 
 .container{
     border: 2px solid #FF8737;
     width: 800px;
     height: 500px;
     display: flex;
-    position: relative;
+    position:sticky;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0px
 
 }
 .container-form{

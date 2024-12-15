@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-
 const Carousel = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const indicators = [0, 1, 2];
@@ -57,14 +56,14 @@ const Notification = ({ onClose }) => (
     </div>
 );
 
-const InfoSection = ({ imgSrc, title, description }) => (
+const InfoSection = ({ imgSrc, title, description, link }) => (
     <section className="info-section">
         <img src={imgSrc} alt={description} />
         <div className="info-text">
             <h3>{title}</h3>
             <p>{description}</p>
             <div className="reserve-button-container">
-                <Link to="/login" className="reserve-button">Reserve con nosotros</Link>
+                <Link to={link} className="reserve-button">Reserve con nosotros</Link>
             </div>
         </div>
     </section>
@@ -85,7 +84,7 @@ const HomePage = () => {
                     <h2>¡Bienvenido a VLJR!</h2>
                     <div className="user-actions">
                         <Link to="/" className="inicio-button">Inicio</Link>
-                        <Link to="/login" className="register-button">Registrarse</Link>
+                        <Link className="register-button">Registrarse</Link>
                     </div>
                 </div>
             </nav>
@@ -103,16 +102,19 @@ const HomePage = () => {
                 imgSrc="../recursos/jesus.png"
                 title="Shifa Dinastia"
                 description="Shifa Dinastía es un restaurante especializado en auténtica comida china, ofreciendo una experiencia culinaria única con sabores tradicionales y platos elaborados con ingredientes frescos y de alta calidad."
+                link="/chino"
             />
             <InfoSection
                 imgSrc="../recursos/vane.png"
                 title="Dolce Vita"
                 description="Dolce Vita es un restaurante italiano que celebra la esencia de la cocina mediterránea, ofreciendo pastas frescas, pizzas artesanales y sabores auténticos que te transportan al corazón de Italia."
+                link="/dolce-vita"
             />
             <InfoSection
                 imgSrc="../recursos/Ramon.png"
                 title="La tablita del Tartaro"
                 description="La Tablita del Tártaro es un restaurante especializado en asados a la parrilla, donde los cortes de carne premium y las técnicas tradicionales se combinan para ofrecer una experiencia gastronómica llena de sabor y autenticidad."
+                link="/la-tablita-del-tartaro"
             />
 
             <footer className="footer">

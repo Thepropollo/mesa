@@ -49,6 +49,10 @@ body {
     border: 2px solid #FF8737;
     padding: 8px 15px;
     border-radius: 5px;
+    margin-left: 20px;
+    color: #333;
+    text-decoration: none;
+    margin: 0%;
 }
 
 .register-button {
